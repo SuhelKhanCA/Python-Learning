@@ -1,0 +1,26 @@
+PS C:\Users\suhel\Desktop\Pyhton-chai> python
+Python 3.12.4 (tags/v3.12.4:8e8a4ba, Jun  6 2024, 19:30:16) [MSC v.1940 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> tea_types = ("Black", "Green", "Oolong")
+>>> tea_types                               
+('Black', 'Green', 'Oolong')
+>>> tea_types[0]
+'Black'
+>>> tea_types[0] = "Lemon"
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+>>> len(tea_types)
+3
+>>> more_tea = ("Herbal", "Earl Grey")
+>>> all_tea = tea_types + more_tea
+>>> all_tea
+('Black', 'Green', 'Oolong', 'Herbal', 'Earl Grey')
+>>> tea_types
+('Black', 'Green', 'Oolong')
+>>> (black, green, Oolong) = tea_types
+>>> black
+'Black'
+>>> type(tea_types)
+<class 'tuple'>
+>>> 
