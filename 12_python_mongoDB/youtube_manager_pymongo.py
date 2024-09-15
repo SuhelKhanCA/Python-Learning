@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 
 
-client = MongoClient("mongodb+srv://youtube-todo:youtubetodo@cluster0.xabmu.mongodb.net/youtube-todo", tlsAllowInvalidCertificates=True) # not a good practice to include id password in code file
+client = MongoClient("mongodb+srv://<======>:<=======>@cluster0.xabmu.mongodb.net/youtube-todo", tlsAllowInvalidCertificates=True) # not a good practice to include id password in code file
 # tlsAllowInvalidCertificates=True # Not a good practice
 
 db = client["youtube-todo"]
